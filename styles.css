@@ -31,17 +31,18 @@ header .site-url {
     background-color: #d3d3d3; /* Light grey background */
     padding: 0.2em 0.6em; /* Padding for the pill effect */
     border-radius: 1em; /* Curved borders */
-    margin-bottom: -3em; /* Adjust spacing to bring it closer to the h1 */
+    margin-bottom: -1.5em; /* Adjust spacing to bring it closer to the h1 */
 }
 
 header h1 {
     font-size: 3em; /* Increased font size */
     margin-bottom: 0.1em; /* Reduce bottom margin */
     font-weight: 700; /* Adjust weight as needed */
+    line-height: 1; /* Adjust line height */
 }
 
 header .vice-versa {
-    margin-top: -1em; /* Adjust space between vice versa and the h1 */
+    margin-top: 0.2em; /* Adjust space between vice versa and the h1 */
     font-size: 0.8em; /* Smaller font size */
     color: #555; /* Darker grey color for better contrast */
     margin-bottom: 0.5em; /* Adjust space between vice versa and the next paragraph */
