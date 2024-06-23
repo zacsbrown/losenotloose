@@ -4,26 +4,42 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #fff; /* Set background color to white */
     color: #333;
 }
 
+.container {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1em; /* Add some padding for small screens */
+}
+
 header {
-    text-align: center;
-    padding: 2em;
+    padding: 2em 0; /* Adjust padding */
     background: #fff;
-    border-bottom: 1px solid #ccc;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the left */
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+    font-size: 3em;
+    margin-bottom: 0.2em; /* Reduce bottom margin */
     font-weight: 700; /* Adjust weight as needed */
+}
+
+header .vice-versa {
+    margin-top: 0;
+    font-size: 0.8em; /* Smaller font size */
+    color: #888; /* Light grey color */
+    margin-bottom: 1em; /* Adjust space between vice versa and the next paragraph */
+}
+
+header .vice-versa-text {
+    font-style: italic;
+    color: #888; /* Light grey color */
 }
 
 header p {
@@ -32,16 +48,21 @@ header p {
     font-weight: 400; /* Adjust weight as needed */
 }
 
+header p.highlight {
+    font-size: 0.9em; /* Smaller font size */
+    margin-right: 25%; /* Limit to 75% width */
+}
+
 main {
-    padding: 2em;
+    padding: 2em 0;
 }
 
 section {
     margin: 2em 0;
     background: #fff;
     padding: 1.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border radius */
 }
 
 section h2 {
@@ -51,19 +72,31 @@ section h2 {
 }
 
 section h3 {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Match the normal text size */
+    font-weight: 600; /* Keep bold */
     margin-top: 1em;
-    font-weight: 500; /* Adjust weight as needed */
 }
 
 footer {
     text-align: center;
     padding: 1em;
     background: #fff;
-    border-top: 1px solid #ccc;
+    border-top: none; /* Remove border */
 }
 
 footer p {
     margin: 0.5em 0;
     font-weight: 400; /* Adjust weight as needed */
+}
+
+.small-link {
+    font-size: 0.8em; /* Smaller font size */
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Display as block element */
+    margin-top: 1em; /* Add margin on top */
+}
+
+.small-link:hover {
+    text-decoration: underline; /* Underline on hover */
 }
