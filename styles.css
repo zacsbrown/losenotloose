@@ -25,6 +25,15 @@ header {
     position: relative; /* Position relative for arrow positioning */
 }
 
+header .site-url {
+    font-size: 0.8em; /* Smaller size */
+    color: #777; /* Adjust color as needed */
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 0.2em 0.6em; /* Padding for the pill effect */
+    border-radius: 1em; /* Curved borders */
+    margin-bottom: -3em; /* Adjust spacing to bring it closer to the h1 */
+}
+
 header h1 {
     font-size: 3em; /* Increased font size */
     margin-bottom: 0.1em; /* Reduce bottom margin */
@@ -32,7 +41,7 @@ header h1 {
 }
 
 header .vice-versa {
-    margin-top: -0.3em; /* Adjust space between vice versa and the h1 */
+    margin-top: -1em; /* Adjust space between vice versa and the h1 */
     font-size: 0.8em; /* Smaller font size */
     color: #555; /* Darker grey color for better contrast */
     margin-bottom: 0.5em; /* Adjust space between vice versa and the next paragraph */
@@ -118,7 +127,7 @@ footer p:first-of-type {
     font-weight: 400; /* Adjust weight as needed */
 }
 
-footer p:last-of-type {
+footer p.small-text {
     font-size: 0.8em; /* Change the "Made by me, with ❤️" text back to smaller size */
     font-weight: 400; /* Adjust weight as needed */
 }
