@@ -31,7 +31,7 @@ header .site-url {
     background-color: #d3d3d3; /* Light grey background */
     padding: 0.2em 0.6em; /* Padding for the pill effect */
     border-radius: 1em; /* Curved borders */
-    margin-bottom: -1.5em; /* Adjust spacing to bring it closer to the h1 */
+    margin-bottom: 0.5em; /* Adjust spacing to bring it closer to the h1 */
 }
 
 header h1 {
@@ -142,6 +142,25 @@ footer p.small-text {
 }
 
 .small-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.article-header {
+    padding: 1em 0; /* Reduce padding for article header */
+    background: none; /* Remove background color for article header */
+    min-height: auto; /* Remove min-height constraint */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.back-link {
+    font-size: 1em; /* Set font size */
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 0.5em; /* Margin top */
+}
+
+.back-link:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
