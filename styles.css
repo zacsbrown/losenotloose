@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo', Arial, sans-serif; /* Specify fallback fonts */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -22,10 +22,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; /* Align items to the left */
+    position: relative; /* Position relative for arrow positioning */
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 0.2em; /* Reduce bottom margin */
     font-weight: 700; /* Adjust weight as needed */
 }
@@ -53,6 +54,29 @@ header p.highlight {
     margin-right: 25%; /* Limit to 75% width */
 }
 
+.scroll-arrow {
+    font-size: 2em; /* Size of the arrow */
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px; /* Position the arrow near the bottom */
+    left: 0;
+    color: #000; /* Color of the arrow changed to black */
+    animation: bounce 2s infinite; /* Add a bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 main {
     padding: 2em 0;
 }
@@ -73,7 +97,7 @@ section h2 {
 
 section h3 {
     font-size: 1.2em; /* Match the normal text size */
-    font-weight: 600; /* Keep bold */
+    font-weight: 700; /* Keep bold */
     margin-top: 1em;
 }
 
