@@ -35,7 +35,7 @@ header .vice-versa {
     margin-top: -0.3em; /* Adjust space between vice versa and the h1 */
     font-size: 0.8em; /* Smaller font size */
     color: #555; /* Darker grey color for better contrast */
-    margin-bottom: 1em; /* Adjust space between vice versa and the next paragraph */
+    margin-bottom: 0.5em; /* Adjust space between vice versa and the next paragraph */
 }
 
 header .vice-versa-text {
@@ -58,7 +58,7 @@ header p.highlight {
     font-size: 1.2em; /* Adjusted size of the arrow */
     text-align: center;
     position: absolute;
-    bottom: -5em; /* Adjust bottom position to ensure visibility */
+    bottom: 1em; /* Adjust bottom position to ensure visibility */
     left: 50%; /* Center the arrow horizontally */
     transform: translateX(-50%); /* Center the arrow horizontally */
     color: #000; /* Color of the arrow changed to black */
@@ -111,7 +111,15 @@ footer {
 
 footer p {
     margin: 0.5em 0;
-    font-size: 1.2em; /* Increase font size for the footer text */
+}
+
+footer p:first-of-type {
+    font-size: 1.2em; /* Keep the "It's lose, not loose" text larger */
+    font-weight: 400; /* Adjust weight as needed */
+}
+
+footer p:last-of-type {
+    font-size: 0.8em; /* Change the "Made by me, with ❤️" text back to smaller size */
     font-weight: 400; /* Adjust weight as needed */
 }
 
