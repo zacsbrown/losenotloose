@@ -31,7 +31,7 @@ header .site-url {
     background-color: #d3d3d3; /* Light grey background */
     padding: 0.2em 0.6em; /* Padding for the pill effect */
     border-radius: 1em; /* Curved borders */
-    margin-bottom: 0.5em; /* Adjust spacing to bring it closer to the h1 */
+    margin-bottom: -1.5em; /* Adjust spacing to bring it closer to the h1 */
 }
 
 header h1 {
