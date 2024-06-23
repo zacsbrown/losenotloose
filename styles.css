@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 2em 0; /* Adjust padding */
+    padding: 2em 1em; /* Adjust padding for consistency */
     background: #f2f2f2;
     min-height: calc(100vh - 3em); /* Ensure it fits within the viewport */
     display: flex;
@@ -89,15 +89,20 @@ header p.highlight {
 }
 
 main {
-    padding: 2em 0;
+    padding: 2em 1em; /* Adjust padding for consistency */
 }
 
 section {
-    margin: 2em 0;
+    margin: 2em 0; /* Adjust margin for consistency */
+    padding: 0 1em; /* Ensure consistent padding */
     background: #f2f2f2;
     padding: 1.5em;
     border: none; /* Remove border */
     border-radius: 0; /* Remove border radius */
+}
+
+section:first-of-type {
+    margin-top: 0; /* Remove top margin for the first section */
 }
 
 section h2 {
@@ -146,7 +151,7 @@ footer p.small-text {
 }
 
 .article-header {
-    padding: 1em 0; /* Reduce padding for article header */
+    padding: 2em 1em; /* Adjust padding for consistency */
     background: none; /* Remove background color for article header */
     min-height: auto; /* Remove min-height constraint */
     justify-content: flex-start; /* Align items to the top */
@@ -169,7 +174,7 @@ footer p.small-text {
     .container {
         padding: 0 1em; /* Ensure consistent padding on mobile */
     }
-    header, section, footer {
+    header, main, section, footer {
         padding: 1em; /* Consistent padding for all sections on mobile */
     }
     section {
