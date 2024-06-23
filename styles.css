@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #fff; /* Set background color to white */
+    background-color: #f2f2f2; /* Set background color to white */
     color: #333;
 }
 
@@ -16,7 +16,7 @@ body {
 
 header {
     padding: 2em 0; /* Adjust padding */
-    background: #fff;
+    background: #f2f2f2;
     min-height: calc(100vh - 3em); /* Ensure it fits within the viewport */
     display: flex;
     flex-direction: column;
@@ -27,8 +27,8 @@ header {
 
 header .site-url {
     font-size: 0.8em; /* Smaller size */
-    color: #777; /* Adjust color as needed */
-    background-color: #f0f0f0; /* Light grey background */
+    color: #2c2c2c; /* Adjust color as needed */
+    background-color: #d3d3d3; /* Light grey background */
     padding: 0.2em 0.6em; /* Padding for the pill effect */
     border-radius: 1em; /* Curved borders */
     margin-bottom: -3em; /* Adjust spacing to bring it closer to the h1 */
@@ -93,7 +93,7 @@ main {
 
 section {
     margin: 2em 0;
-    background: #fff;
+    background: #f2f2f2;
     padding: 1.5em;
     border: none; /* Remove border */
     border-radius: 0; /* Remove border radius */
@@ -114,7 +114,7 @@ section h3 {
 footer {
     text-align: center;
     padding: 1em;
-    background: #fff;
+    background: #f2f2f2;
     border-top: none; /* Remove border */
 }
 
@@ -142,4 +142,17 @@ footer p.small-text {
 
 .small-link:hover {
     text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1em; /* Ensure consistent padding on mobile */
+    }
+    header, section, footer {
+        padding: 1em; /* Consistent padding for all sections on mobile */
+    }
+    section {
+        margin: 1em 0; /* Consistent margin for all sections on mobile */
+    }
 }
