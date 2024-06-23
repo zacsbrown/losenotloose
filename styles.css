@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0.2em; /* Reduce bottom margin */
     font-weight: 700; /* Adjust weight as needed */
 }
@@ -55,11 +55,11 @@ header p.highlight {
 }
 
 .scroll-arrow {
-    font-size: 2em; /* Size of the arrow */
+    font-size: 1.2em; /* Size of the arrow */
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 10px; /* Position the arrow near the bottom */
+    bottom: 20px; /* Position the arrow a bit higher from the bottom */
     left: 0;
     color: #000; /* Color of the arrow changed to black */
     animation: bounce 2s infinite; /* Add a bounce animation */
