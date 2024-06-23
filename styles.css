@@ -11,7 +11,7 @@ body {
 .container {
     max-width: 800px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the container */
-    padding: 0 1em; /* Add some padding for small screens */
+    padding: 0 0em; /* Add some padding for small screens */
 }
 
 header {
@@ -93,10 +93,7 @@ main {
 }
 
 section {
-    margin: 2em 0; /* Adjust margin for consistency */
-    padding: 0 1em; /* Ensure consistent padding */
     background: #f2f2f2;
-    padding: 1.5em;
     border: none; /* Remove border */
     border-radius: 0; /* Remove border radius */
 }
@@ -167,17 +164,4 @@ footer p.small-text {
 
 .back-link:hover {
     text-decoration: underline; /* Underline on hover */
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 1em; /* Ensure consistent padding on mobile */
-    }
-    header, main, section, footer {
-        padding: 1em; /* Consistent padding for all sections on mobile */
-    }
-    section {
-        margin: 1em 0; /* Consistent margin for all sections on mobile */
-    }
 }
